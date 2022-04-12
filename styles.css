@@ -1,234 +1,104 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #585c68;
-  font-size: 14px;
-  line-height: 22px;
-  color: #555555;
-}
-
-.bold {
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.semi-bold {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.resume {
-  width: 800px;
-  height: auto;
-  display: flex;
-  margin: 50px auto;
-}
-
-.resume .resume_left {
-  width: 280px;
-  background: #144E75;
-}
-
-.resume .resume_left .resume_profile {
-  width: 100%;
-  height: 280px;
-}
-
-.resume .resume_left .resume_profile img {
-  width: 100%;
-  height: 100%;
-}
-
-.resume .resume_left .resume_content {
-  padding: 0 25px;
-}
-
-.resume .title {
-  margin-bottom: 20px;
-}
-
-.resume .resume_left .bold {
-  color: #fff;
-}
-
-.resume .resume_left .regular {
-  color: #b1eaff;
-}
-
-.resume .resume_item {
-  padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
-}
-
-.resume .resume_left .resume_item:last-child,
-.resume .resume_right .resume_item:last-child {
-  border-bottom: 0px;
-}
-
-.resume .resume_left ul li {
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.resume .resume_left ul li:last-child {
-  margin-bottom: 0;
-}
-
-.resume .resume_left ul li .icon {
-  width: 35px;
-  height: 35px;
-  background: #fff;
-  color: #144E75;
-  border-radius: 50%;
-  margin-right: 15px;
-  font-size: 16px;
-  position: relative;
-}
-
-.resume .icon i,
-.resume .resume_right .resume_hobby ul li i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.resume .resume_left ul li .data {
-  color: #b1eaff;
-}
-
-.resume .resume_left .resume_skills ul li {
-  display: flex;
-  margin-bottom: 10px;
-  color: #b1eaff;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.resume .resume_left .resume_skills ul li .skill_name {
-  width: 25%;
-}
-
-.resume .resume_left .resume_skills ul li .skill_progress {
-  width: 60%;
-  margin: 0 5px;
-  height: 5px;
-  background: #144E75;
-  position: relative;
-}
-
-.resume .resume_left .resume_skills ul li .skill_per {
-  width: 15%;
-}
-
-.resume .resume_left .resume_skills ul li .skill_progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: #fff;
-}
-
-.resume .resume_left .resume_social .semi-bold {
-  color: #fff;
-  margin-bottom: 3px;
-}
-
-.resume .resume_right {
-  width: 520px;
-  background: #fff;
-  padding: 25px;
-}
-
-.resume .resume_right .bold {
-  color: #144E75;
-}
-
-.resume .resume_right .resume_work ul,
-.resume .resume_right .resume_education ul {
-  padding-left: 40px;
-  overflow: hidden;
-}
-
-.resume .resume_right ul li {
-  position: relative;
-}
-
-.resume .resume_right ul li .date {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.resume .resume_right ul li .info {
-  margin-bottom: 20px;
-}
-
-.resume .resume_right ul li:last-child .info {
-  margin-bottom: 0;
-}
-
-.resume .resume_right .resume_work ul li:before,
-.resume .resume_right .resume_education ul li:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -25px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 2px solid #144E75;
-}
-
-.resume .resume_right .resume_work ul li:after,
-.resume .resume_right .resume_education ul li:after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: -21px;
-  width: 2px;
-  height: 115px;
-  background: #144E75;
-}
-
-.resume .resume_right .resume_hobby ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #144E75;
-  border-radius: 50%;
-  position: relative;
-  color: #144E75;
-}
-
-.resume .resume_right .resume_hobby ul li i {
-  font-size: 30px;
-}
-
-.resume .resume_right .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -52px;
-  width: 50px;
-  height: 2px;
-  background: #144E75;
-}
-
-.resume .resume_right .resume_hobby ul li:last-child:before {
-  display: none;
-}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-offset-2 col-lg-8">
+      <section class="panel panel-default">
+        <div class="panel-body">
+          <article class="panel-body">
+            <figure class="text-center">
+              <img src="https://d13yacurqjgara.cloudfront.net/users/42865/screenshots/614568/devilspiritjinx.jpg" class="img-thumbnail img-circle img-responsive" alt="me">
+              <figcaption>
+                <h3>Yutthana Siphuengchai</h3> 99/4 M.9 Saraburi-Loamsak Rd. Nachaliang Nongphai Phetchabun 67220
+                <br> Tel. 092-889-7790 E-mail: yutna1990@gmail.com
+              </figcaption>
+            </figure>
+          </article>
+          <br>
+          <article>
+            <h4>
+            									  <strong>Personal Details</strong>
+								            </h4>
+            <hr>
+            <dl class="dl-horizontal">
+              <dt>Date of Birth:</dt>
+              <dd>April 14, 1990</dd>
+              <dt>Age:</dt>
+              <dd>25</dd>
+              <dt>Marital Status:</dt>
+              <dd>Single</dd>
+              <dt>Military Status:</dt>
+              <dd>Exempted through Military Drawing Ballot</dd>
+              <dt>Interests:</dt>
+              <dd>HTML5, CSS3, JavaScript, jQuery, Underscore.js, Backbone.js, Web Design, Responsive Design, Node.js, Java and Linux.</dd>
+            </dl>
+          </article>
+          <article>
+            <h4>
+									              <strong>Edcucation</strong>
+								            </h4>
+            <hr>
+            <dl class="dl-horizontal">
+              <dt>2009-2013</dt>
+              <dd>Bachelor of Engineering (Computer Engineering) | Suranaree University of Technology</dd>
+            </dl>
+          </article>
+          <article>
+            <h4>
+									              <strong>Skills</strong>
+								            </h4>
+            <hr>
+            <dl class="dl-horizontal">
+              <dt>Languages:</dt>
+              <dd>HTML5, CSS3 and JavaScript</dd>
+              <dt>Framework:</dt>
+              <dd>jQuery, Bootstrap, NW.js</dd>
+            </dl>
+          </article>
+          <article>
+            <h4>
+									              <strong>Work Experiences</strong>
+								            </h4>
+            <hr>
+            <dl class="dl-horizontal">
+              <dt>2013-2014</dt>
+              <dd>Software Developer at SoftPlus Technology Co., Ltd. (Soft Square Group of Companies)</dd>
+              <dt>2014-Present</dt>
+              <dd>Web Programmer at Market Anyware Co., Ltd.</dd>
+            </dl>
+            <hr>
+          </article>
+          <article>
+            <h4>
+									         <strong>Projects</strong>
+								          </h4>
+            <dl class="dl-horizontal">
+              <dt>Market Anyware Desktop</dt>
+              <dd>Create Cross Platform Realtime Stock Application (Windows, Linux, Macs) by using Web Technology for investor <a href="http://marketanyware.com/th/index.html">Link</a></dd>
+              <dt>Fluent Forever Website</dt>
+              <dd>Create Fluent Forever Book Landing Page <a href="http://maxincube.com/fluent-forever">Link</a></dd>
+              <dt>Employee Self Service</dt>
+              <dd>Create the User Interface and Front-End Development</dd>
+              <dt>Project Management (Properties Management)</dt>
+              <dd>Customize Web UI in Spring roo Framework (Tagx Files) for generate Bootstrap components, Prototype, Drag and Drop Apps , and Front-End Development</dd>
+            </dl>
+            <hr>
+          </article>
+          <article>
+            <div class="pull-right">
+              <a href="https://www.facebook.com/yutthana.siphuengchai" title="Yutna's Facebook">
+                <img src="http://icons.iconarchive.com/icons/lunartemplates/modern-social-media-circles/48/Facebook-icon.png" alt="facebook">
+              </a>
+              <a href="https://twitter.com/Yutna_Na" title="Yutna's Twitter">
+                <img src="http://icons.iconarchive.com/icons/lunartemplates/modern-social-media-circles/48/Twitter-icon.png" alt="twitter">
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
